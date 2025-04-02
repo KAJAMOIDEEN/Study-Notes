@@ -1,0 +1,24 @@
+import math
+n = int(input('enter the number :'))
+k = n
+r = 0
+while n > 0:
+    d =n % 10
+    r = r * 10 + d
+    n = math.floor(n/10)
+if r == k:
+    print('given number is palindrom ')
+else:
+    print('given number is not palindrome')
+Output: 
+Input as a number: 1212
+
+output:
+
+enter the number :1212
+given number is not palindrome
+
+output:
+enter the number :12345
+given number is not palindrome
+

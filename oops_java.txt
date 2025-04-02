@@ -1,0 +1,33 @@
+Access modifiers/specifiers:
+public	-The code is accessible for all classes	
+private	-The code is only accessible within the declared class	
+protected	-The code is accessible in the same package and subclasses. You will learn more about subclasses and superclasses in the Inheritance chapter
+default	-The code is only accessible in the same package. This is used when you don't specify a modifier. You will learn more about packages in the Packages chapter	
+
+
+
+Oops concept in Java:
+
+1.Class - Class is a set of objects which shares common characteristics/ behaviors and common properties/ attributes
+   i.attributes - variables - to store a data
+   ii.behaviors - functions/methods - A method is a collection of statements that perform some specific task and return the result to the caller.
+
+2.Object - object Object is a instance of class and is used to call methods and object name is should be same as class name
+
+3.Encapsulation-  hiding the personal data using private (variable)
+
+4.Inheritance -  base class is inherited to the derived class.
+   i.Single level Inhertiance    - 
+  ii.Multilevel Inheritance
+ iii.Multiple Inheritance - interface -
+  iv.Hierarical Inheritane
+   v.Hybrid Inheritance
+
+5.Polymorphism-  methods overloading - complie time(same method name,different argument,in a single class) - , 
+                 method overriding - runtime(same method name, same argument,in different class) 
+
+6.Abstracton- process of hiding certain details and showing only essential information to the user.
+              Abstraction can be achieved with either abstract classes or interfaces
+              abstrart class /abtsract methods (i.if we are using abstract method in abstract class we must use abstract keyword, ii.abstract can use normal method, iii.abstract cannot have obj creation but in object way) 
+        
+  

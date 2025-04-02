@@ -1,0 +1,62 @@
+SQL:
+
+Datatypes:
+int/Integer - stores number  i.e(890) 
+
+bigInt - stores large numbers i.e(98979766656778)
+
+float - store decimal number i.e(8.99)
+
+double - stores large decimal i.e(8.9090908)
+
+bool/Boolean - stores true or false 
+
+char -store one character i.e('A')
+
+varchar - stores all data as string i.e("this is string")
+
+date - store date type of data i.e('9999-06-07')
+
+datetime - stores both date and time i.e('1970-01-01 00:00:01' UTC to '2038-01-09 03:14:07')
+
+time - stores time 
+
+year - store only year
+
+
+SQL Commands:
+Data Definition Language (DDL),
+Data Query Language (DQL), 
+Data Manipulation Language (DML), 
+Data Control Language (DCL), and 
+Transaction Control Language (TCL)
+
+Alter Table:
+add column
+drop column
+modify column datatype
+
+
+SQL constraints:
+
+NOT NULL - Ensures that a column cannot have a NULL value
+UNIQUE - Ensures that all values in a column are different
+PRIMARY KEY - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table   
+FOREIGN KEY - Prevents actions that would destroy links between tables                              
+CHECK - Ensures that the values in a column satisfies a specific condition
+DEFAULT - Sets a default value for a column if no value is specified
+CREATE INDEX - Used to create and retrieve data from the database very quickly  
+
+Most Important SQL Commands:
+
+SELECT - extracts data from a database
+UPDATE - updates data in a database
+DELETE - deletes data from a database
+INSERT INTO - inserts new data into a database
+CREATE DATABASE - creates a new database
+ALTER DATABASE - modifies a database
+CREATE TABLE - creates a new table
+ALTER TABLE - modifies a table
+DROP TABLE - deletes a table
+CREATE INDEX - creates an index (search key)
+DROP INDEX - deletes an index

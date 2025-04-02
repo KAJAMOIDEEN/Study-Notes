@@ -1,0 +1,71 @@
+--------------------------------------------------                                                                                                                                                                                                                                                                                                                                  /*                          5.FUNCTIONS
+			      ~~~~~~~~~
+    A functions is a self contained programming statement which performs
+a well defined task whenever called function break large computing task
+into smaller once.
+
+PROCESS OF FUNCTION:
+~~~~~~~~~~~~~~~~~~~~
+   * Function can be called by the function name.
+   * After processing it returns the value to calling function.
+    * Number of times a sub function can be called in main function.
+syntax:
+~~~~~~~
+ returntype funname(datatype var1,datatype var2,...,datatype varn)
+ {
+  statements;
+  return(val);
+ }
+Types of functions:
+~~~~~~~~~~~~~~~~~~~
+   Function are divided into four types based on their return type
+and arguments.
+There are
+    1.Function with no args & no return type.
+    2.Function with no args & with return type.
+    3.Function with args & no return type.
+    4.function with args & with return type.
+
+FUNCTION PROTOTYPE:
+~~~~~~~~~~~~~~~~~~~
+      A function has the return type other than 'int' we have to declared
+that function before main() function that is called function prototype.
+(or)function declaration.
+
+FUNCTION WITH NO ARGS AND NO RTN TYPE
+~~~~~~~~ ~~~~ ~~ ~~~~ ~~~ ~~ ~~~ ~~~~*/
+void sum();     /*function declaration*/
+void sub();
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+ clrscr();
+ sum();          /*calling function*/
+ printf("Good Evening\n");
+ sub();
+ getch();
+}
+void sum()        /*fun defn*/ /*called function*/
+{
+ int a,b,c;
+ printf("Enter a&b values\n");
+ scanf("%d%d",&a,&b);
+ c=a+b;
+ printf("c=%d\n",c);
+ printf("Google\n");
+}
+void sub()
+{
+ int a,b,c;
+ printf("Enter a&b\n");
+ scanf("%d%d",&a,&b);
+ c=a-b;
+ printf("Diff=%d\n",c);
+}
+
+
+
+
+
+

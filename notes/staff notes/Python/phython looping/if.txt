@@ -1,0 +1,6 @@
+m=int(input("enter your maths mark"))
+s=int(input("enter your science mark"))
+if(m>=80 or s>=80):
+    print("you are selected")
+else:
+    print("you are not selected")

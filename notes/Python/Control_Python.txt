@@ -1,0 +1,134 @@
+Python Conditions and If statements
+----------------------------------------------
+Python supports the usual logical conditions from mathematics:
+
+Equals: a == b
+Not Equals: a != b
+Less than: a < b
+Less than or equal to: a <= b
+Greater than: a > b
+Greater than or equal to: a >= b
+
+
+if - else:
+-----------
+a = 200
+b = 33
+if b > a:
+  print("b is greater than a")
+else:
+  print("b is not greater than a")
+
+if - else if - else:
+--------------------
+a = 200
+b = 33
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+else:
+  print("a is greater than b")
+
+Python Loops:
+------------------
+	* To execute set of statements repeatedly based on some conditions.
+
+	* Python has two primitive loop commands:
+		*while loop
+		* for loop
+
+The while Loop:
+--------------------
+With the while loop we can execute a set of statements as long as a condition is true.
+
+Syntax:
+----------
+	initial
+	while condition:
+	   statement
+
+i = 1
+while i < 6:
+  print(i)
+  i += 1   //i=i+1
+
+For Loop:
+-------------
+	* For loop is considered as an advanced form of while loop.
+	* With the for loop we can execute a set of statements, once for each item in a list, 		tuple, set etc.
+
+Syntax:
+---------
+	for value in sequence:
+		statement
+Break:
+----------
+i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1
+
+Continue:
+-------------
+i = 0
+while i < 6:
+  i += 1 
+  if i == 3:
+    continue
+  print(i)
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+
+String Using For Loop:
+---------------------------
+for x in "banana":
+  print(x)
+
+
+Break:
+--------
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x) 
+  if x == "banana":
+    break
+
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    break
+  print(x)
+
+
+Continue:
+------------
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x)
+
+The range() Function
+----------------------------
+To loop through a set of code a specified number of times, we can use the range() function,
+The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.
+
+for x in range(6):
+  print(x)
+
+
+Nested Loops:
+-----------------
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+
+for x in adj:
+  for y in fruits:
+    print(x, y)
+

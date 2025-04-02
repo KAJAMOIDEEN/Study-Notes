@@ -1,0 +1,15 @@
+/*POINTER ARRAY USING FLOAT*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+ float a[5],*p;
+ int i;
+ clrscr();
+ for(i=0;i<5;i++)
+ scanf("%f",&a[i]);
+ p=&a[0];
+ for(i=0;i<5;i++)
+ printf("%f is stored in the address %u\n",*(p+i),(p+i));
+ getch();
+}

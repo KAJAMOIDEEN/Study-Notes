@@ -1,0 +1,16 @@
+/*draw a circle*/
+#include<graphics.h>
+#include,stdio.h>
+main()
+{
+int driver,mode;
+driver=9;
+mode=VGAMED;
+initgraph(&driver,&mode,"\\tc");
+setpalette(0,3);
+setcolor(5);
+circle(50,50,25);
+getch();
+restorecrtmode();
+}
+

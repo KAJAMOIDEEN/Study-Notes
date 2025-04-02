@@ -1,0 +1,176 @@
+a=0
+b=1
+c=0
+r=int(input("Enter R Value"))
+print(a)
+print(b)
+while c<=r:
+    c=a+b
+    if c<=r:
+        print(c)
+        a=b;
+        b=c;
+        
+
+--Sample Turtle
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("light green")
+wn.title("Turtle")
+skk = turtle.Turtle()
+skk.forward(100)
+turtle.done()
+
+
+--Square
+import turtle  
+skk = turtle.Turtle() 
+  
+for i in range(4): 
+    skk.forward(50) 
+    skk.right(90) 
+      
+turtle.done() 
+
+
+--Star
+import turtle    
+star = turtle.Turtle()   
+for i i-n range(5): 
+    star.forward(50) 
+    star.right(144)       
+turtle.done() 
+
+
+--Shape
+import turtle 
+colors = ['red', 'purple', 'blue', 'green', 'orange', 'yellow'] 
+t = turtle.Pen() 
+turtle.bgcolor('black') 
+for x in range(360): 
+    t.pencolor(colors[x%6]) 
+    t.width(x/100 + 1) 
+    t.forward(x) 
+    t.left(59) 
+
+
+
+import turtle             
+my_wn = turtle.Screen()
+turtle.speed(3)
+for i in range(2):
+   turtle.circle(3*i)
+   turtle.circle(-3*i)
+   turtle.right(i)
+turtle.exitonclick()
+
+
+
+import turtle
+turtle.forward(30)
+turtle.left(30)
+turtle.forward(30)
+turtle.left(30)
+turtle.forward(30)
+turtle.left(90)
+turtle.forward(30)
+turtle.left(90)
+
+
+
+import turtle  #Inside_Out 
+wn = turtle.Screen() 
+wn.bgcolor("light green") 
+skk = turtle.Turtle() 
+skk.color("blue") 
+  
+def sqrfunc(size): 
+    for i in range(4): 
+        skk.fd(size) 
+        skk.left(90) 
+        size = size + 5
+  
+sqrfunc(6) 
+sqrfunc(26) 
+sqrfunc(46) 
+sqrfunc(66) 
+sqrfunc(86) 
+sqrfunc(106) 
+sqrfunc(126) 
+sqrfunc(146) 
+
+
+
+--Program for Triangle
+import turtle
+turtle.backward(50)
+turtle.left(60)
+turtle.forward(50)
+turtle.left(60)
+turtle.backward(50)
+
+--program by harish&sanjay
+
+import turtle
+import colorsys
+turtle.bgcolor("black")
+turtle = turtle.Turtle() 
+
+for i in range(157):
+    color=colorsys.hsv_to_rgb(i/150,1.0,1.0)
+    turtle.color(color)
+    turtle.forward(25) 
+    turtle.right(5)
+    turtle.left(10)
+    turtle.backward(35)
+    turtle.forward(30) 
+    turtle.right(4)
+    turtle.left(10)
+    turtle.backward(35)
+    turtle.forward(50)
+    turtle.forward(25) 
+    turtle.right(2)
+    turtle.left(10)
+    turtle.backward(25)
+    turtle.forward(35) 
+    turtle.right(3)
+    turtle.left(10)
+    turtle.backward(35)
+    turtle.speed(0)
+      
+turtle.done() 
+
+--program for rainbow by harish & sanjay
+
+import turtle
+import colorsys
+turtle.bgcolor("black")
+for i in range(360):
+    color=colorsys.hsv_to_rgb(i/150,1.0,1.0)
+    turtle.color(color)
+    turtle.forward(i)
+    turtle.right(7)
+    turtle.color(color)
+    turtle.forward(60) 
+    turtle.right(244)
+    turtle.left(10)
+    turtle.backward(35)
+    turtle.forward(60) 
+    turtle.right(244)
+    turtle.left(10)
+    turtle.backward(35)
+    turtle.forward(60)
+    turtle.forward(230) 
+    turtle.right(244)
+    turtle.left(10)
+    turtle.backward(25)
+    turtle.forward(60) 
+    turtle.right(244)
+    turtle.left(10)
+    turtle.backward(35)
+    turtle.width(i/100+1)
+    turtle.forward(i)
+    turtle.left(59)
+    turtle.speed(0)
+turtle.exitonclick()
+

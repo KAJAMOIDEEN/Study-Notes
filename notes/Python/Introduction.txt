@@ -1,0 +1,17 @@
+ Python:
+	* Python was visualized in the late 1980s
+	*  It was created in 1991 by Guido van Rossum from Netherlands
+	* Python got its name from "Monty Python's Flying Circus"
+	* Python 2.0 was released in the year 2000
+	* Python 3.0 released in the year 2008
+	* Python is an interpreted language
+	* Programs are executed by an interpreter(line by line error checking)
+	* Interpreter two modes
+		* Interactive Mode	- Statements and the interpreter display the output
+		* Script Mode	- Executes the content of a file which has an 				extension .py
+It is used for:
+	* web development (server-side),
+	* software development,
+	* mathematics,
+	* system scripting.
+

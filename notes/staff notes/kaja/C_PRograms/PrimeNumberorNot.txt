@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int n,i,sum=0;
+clrscr();
+printf("\n\t Enter a Number: ");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+if(n%i==0)
+sum++;
+}
+if(sum==2)
+printf("\n\t The Given Numbers is Prime");
+else
+printf("\n\t The Given Numbers is Not Prime");
+getch();
+}

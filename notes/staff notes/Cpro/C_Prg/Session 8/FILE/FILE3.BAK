@@ -1,0 +1,71 @@
+/*GETW() AND PUTW():
+  ~~~~~~~~~~~~~~~~~~
+GETW():
+~~~~~~~
+   It is used to read the integer from the file.
+
+   syntax:
+   ~~~~~~~
+    int var_name
+    var_name=getw(file_ptr);
+
+putw():
+~~~~~~~
+   It is used to write the integer into the variable.
+
+   syntax:
+   ~~~~~~~
+      int var_name=10;
+      putw(var_name,file _ptr);*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+ FILE *f;
+ int i,n,s=0;
+ clrscr();
+ f=fopen("mark1.doc","w");
+ printf("Enter 5 values\n");
+ for(i=1;i<=5;i++)
+ {
+ scanf("%d",&n);
+ putw(n,f);
+ }
+ fclose(f);
+ printf("The values in file are\n");
+ f=fopen("mark1.doc","r");
+ for(i=1;i<=5;i++)
+ {
+ n=getw(f);
+ printf("%d\n",n);
+ s=s+n;
+ }
+ fclose(f);
+ printf("s=%d\n",s);
+ printf("Again enter 3 values for appended\n");
+ f=fopen("mark1.doc","a");
+ for(i=1;i<=3;i++)
+ {
+ scanf("%d",&n);
+ putw(n,f);
+ }
+ fclose(f);
+ printf("The appended values are\n");
+ f=fopen("mark1.doc","r");
+ for(i=1;i<=8;i++)
+ {
+ n=getw(f);
+ printf("%d\n",n);
+ s=s+n;
+ }
+ printf("The sum of total value is =%d\n",s);
+ fclose(f);
+ getch();
+}
+
+
+
+
+
+

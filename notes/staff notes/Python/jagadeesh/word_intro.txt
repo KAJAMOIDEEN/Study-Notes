@@ -1,0 +1,46 @@
+
+  word documents:-
+           word documents is used to create tables, bio-data, Marriage invitation
+and etc.
+
+Templates:-
+            predefined documents, we can add or change need fields.
+
+fields:-
+
+Name
+Address
+Mobile No
+
+Hard disk
+c: softwares
+d:
+e:
+
+
+File Extension:-
+.docx  (word)
+.jpg   (photos)
+.pdf  (pdf)
+
+close word document     ctrl + F4
+close window   Alt + F4
+
+New ctrl + N
+Open  ctrl + o
+save ctrl + s
+
+Text formats:-
+Text style
+Text size
+Text colour
+
+=rand()
+
+
+
+
+
+
+
+

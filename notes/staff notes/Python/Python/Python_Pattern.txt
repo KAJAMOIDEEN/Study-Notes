@@ -1,0 +1,102 @@
+# Python Program - Pattern Program 1
+		
+for i in range(0, 5):
+    for j in range(0, i+1):
+        print("* ",end="")
+    print()
+
+
+# Python Program - Pattern Program 2
+		
+k = 1
+for i in range(0, 5):
+    for j in range(0, k):
+        print("* ", end="")
+    k = k + 2
+    print()
+
+
+# Python Program - Pattern Program 3
+		
+k = 8
+for i in range(0, 5):
+    for j in range(0, k):
+        print(end=" ")
+    k = k - 2
+    for j in range(0, i+1):
+        print("* ", end="")
+    print()
+
+
+
+# Python Program - Pattern Program 4
+		
+k = 16
+tim = 1
+for i in range(0, 5):
+    for j in range(0, k):
+        print(end=" ")
+    k = k - 4
+    for j in range(0, tim):
+        print("* ", end="")
+    tim = tim + 2
+    print()
+
+
+
+# Python Program - Pattern Program 5
+		
+n = 1
+for i in range(0, 5):
+    for j in range(0, i+1):
+        print(n, end=" ")
+        n = n + 1
+    print()
+
+
+
+
+# Python Program - Pattern Program 6
+		
+for i in range(0, 5):
+    num = 1
+    for j in range(0, i+1):
+        print(num, end=" ")
+        num = num + 1
+    print()
+
+
+
+# Python Program - Pattern Program 7
+		
+k = 0
+rows = 10
+for i in range(1, rows+1):
+    for space in range(1, (rows-i)+1):
+        print(end="  ")
+    while k != (2*i-1):
+        print("* ", end="")
+        k = k + 1
+    k = 0
+    print()
+
+
+
+# Python Program - Pattern Program 10
+		
+for i in range(0, 5):
+    for j in range(5, i, -1):
+        print("* ", end="")
+    print()
+
+
+
+# Python Program - Pattern Program 11
+		
+num = 1
+for i in range(0, 5):
+    for j in range(5, i, -1):
+        print(num, end=" ")
+        num = num + 1
+    print()
+    num = 1

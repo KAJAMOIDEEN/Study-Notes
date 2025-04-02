@@ -1,0 +1,16 @@
+/*draw a square*/
+#include<graphics.h>
+#include<conio.h>
+main()
+{
+ int driver,mode;
+ driver=9;
+ mode=VGAMED;
+ initgraph(&driver,&mode,"\\tc");
+ line(50,40,50,80);
+ line(50,80,100,80);
+ line(100,80,100,40);
+ line(100,40,50,40);
+ getch();
+ restorecrtmode();
+}

@@ -1,0 +1,21 @@
+/*triangle*/
+#include<conio.h>
+#include<graphics.h>
+main()
+{
+ int driver,mode,x1,y1,x2,y2;
+ driver=9;
+ mode=VGAHI;
+ initgraph(&driver,&mode,"\\Tc");
+ setpalette(0,6);
+ setcolor(6);
+ x1=100;y1=300;
+ x2=250;y2=300;
+ line(x1,y1,x2,y2);
+ line(x1,y1,x2,y2);
+ moveto(x2,y2);
+ lineto(x2=x2-75,y2=y2-150);
+ line(x2,y2,x1,y1);
+ getch();
+ restorecrtmode();
+}

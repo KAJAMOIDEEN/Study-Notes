@@ -1,0 +1,26 @@
+/*RECURSIVE FUNCTION
+  ~~~~~~~~~~~~~~~~~~
+  A function which call itself till it specifies the specified
+condition is called RECURSION.*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+ int n;
+ clrscr();
+ printf("Enter n\n");
+ scanf("%d",&n);
+ printf("Fact=%d",fact(n));
+ getch();
+ }
+ int fact(int x)
+ {
+ if((x==1)||(x==0))
+ return(1);
+ else
+ return(x*fact(x-1));
+ }
+
+
+

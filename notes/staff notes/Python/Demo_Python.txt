@@ -1,0 +1,288 @@
+Python:
+	* Python was visualized in the late 1980s
+	*  It was created in 1991 by Guido van Rossum from Netherlands
+	* Python got its name from "Monty Python's Flying Circus"
+	* Python 2.0 was released in the year 2000
+	* Python 3.0 released in the year 2008
+	* Python is an interpreted language
+	* Programs are executed by an interpreter
+	* Interpreter two modes
+		* Interactive Mode	- Statements and the interpreter display the output
+		* Script Mode	- Executes the content of a file which has an extension .py 				extension .py
+It is used for:
+	* web development (server-side),
+	* software development,
+	* mathematics,
+	* system scripting.
+
+Variable:
+	
+		Store the value in memory location
+Example:
+------------
+x = 1    # int       
+y = 2.8  # float
+z = 1j   # complex	#3+5j=(i)real number=3
+
+Python Datatypes:
+-----------------------
+	1. Numeric	- int, float, complex, boolean
+	2. Sequence	- str, list,tuple
+	3. Sets		- set, frozen set
+	4. Mapping	- dict
+
+Type() Function:
+---------------------
+To verify the type of any object in Python, use the type() function:
+Example:
+-----------
+print(type(x))
+print(type(y))
+print(type(z))
+
+List of Literals in Python:
+--------------------------------
+1. Integer			- 10,11,-12,-13
+2. Floating Point		- 5.6,-3.8,0.22
+3. String			- "aa",'bb'
+4. Complex 		- 2+4j, 9-4j
+5. List			- [], [1,2,3,4]
+6. Tuple			- (), (1,2,3)
+7. Dictionary		- {}, {'a:',8}
+8. Set			-{1,2,3,4}
+9. Unicode		- u"xyz",u"'
+
+
+Example:
+-------------
+
+x=100
+y=98.2
+num='a'
+print("X Value:",x)
+print(y)
+print(num)
+print(type(y))
+print(type(num))
+
+
+
+Input Method:
+--------------------
+x=int(input("Enter X Value"))
+print(x)
+print(type(x))
+y=input("Enter Ur Name")
+print(y)
+
+Python Constants:
+-----------------------
+1. True	- represent the true value of bool type
+2. False	- represent the false value of bool type
+3. None	- is used to represent the absence of value
+
+Formatting Functions:
+----------------------------
+	print("%format specifier",%variablename)
+%c	- character
+%s	- string
+%i	- signed decimal integer
+%d	- signed decimal integer
+%u	- unsigned decimal integer
+%o	- octal integer
+%f	- floating point
+
+
+Keyword:
+-------------
+import keyword
+print(keyword.kwlist)
+
+
+Operators:
+Python divides the operators in the following groups:
+
+Arithmetic operators:
+	+,-,*,/,%,
+	**	Exponentiation	
+	//	Floor division
+Assignment operators:
+	=
+Comparison operators:
+	>,<,<=,>=,==,!=
+Logical operators:
+	and,or,not
+Identity operators:
+	is	-Returns true if both variables are the same object
+	is not	-Returns true if both variables are not the same object
+
+Membership operators:
+in	- Returns True if a sequence with the specified value is present in the object
+not in	- Returns True if a sequence with the specified value is not present in the object
+
+Bitwise operators:
+	&,|,^,~,<<,>>
+
+Example:
+	x = 5
+	print(x > 3 and x < 10)
+	x = 5
+	print(not(x > 3 and x < 10))
+
+Identity Operators:
+------------------------
+x = ["apple", "banana"]
+y = ["apple", "banana"]
+z = x
+print(x is z)
+
+x = ["apple", "banana"]
+y = ["apple", "banana"]
+z = x
+print(x is not z)
+
+Membership Operator:
+-----------------------------
+x = ["apple", "banana"]
+print("banana" in x)
+
+
+x = ["apple", "banana"]
+print("pineapple" not in x)
+
+
+Python Conditions and If statements
+----------------------------------------------
+Python supports the usual logical conditions from mathematics:
+
+Equals: a == b
+Not Equals: a != b
+Less than: a < b
+Less than or equal to: a <= b
+Greater than: a > b
+Greater than or equal to: a >= b
+
+
+if - else:
+-----------
+a = 200
+b = 33
+if b > a:
+  print("b is greater than a")
+else:
+  print("b is not greater than a")
+
+if - else if - else:
+--------------------
+a = 200
+b = 33
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+else:
+  print("a is greater than b")
+
+Python Loops:
+------------------
+	* To execute set of statements repeatedly based on some conditions.
+
+	* Python has two primitive loop commands:
+		*while loop
+		* for loop
+
+The while Loop:
+--------------------
+With the while loop we can execute a set of statements as long as a condition is true.
+
+Syntax:
+----------
+	initial
+	while condition:
+	   statement
+
+i = 1
+while i < 6:
+  print(i)
+  i += 1   //i=i+1
+
+For Loop:
+
+-------------
+	* For loop is considered as an advanced form of while loop.
+	* With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+
+Syntax:
+---------
+	for value in sequence:
+		statement
+Break:
+----------
+i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1
+
+Continue:
+-------------
+i = 0
+while i < 6:
+  i += 1 
+  if i == 3:
+    continue
+  print(i)
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+
+String Using For Loop:
+---------------------------
+for x in "banana":
+  print(x)
+
+
+Break:
+--------
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x) 
+  if x == "banana":
+    break
+
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    break
+  print(x)
+
+
+Continue:
+------------
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x)
+
+The range() Function
+----------------------------
+To loop through a set of code a specified number of times, we can use the range() function,
+The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.
+
+for x in range(6):
+  print(x)
+
+
+Nested Loops:
+-----------------
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+
+for x in adj:
+  for y in fruits:
+    print(x, y)
+

@@ -1,0 +1,14 @@
+String - A collection of character
+
+String Declartion:
+	char str[20];
+
+String Function:
+
+1. strlen - Finds the length of a string
+2. strcpy - Copies a string into another string
+3. strcmp - Compares two strings
+4. strcat - appends one string at the end of another string
+5. strrev - Reverse a string
+6. strlwr - converts a string to lowercase
+

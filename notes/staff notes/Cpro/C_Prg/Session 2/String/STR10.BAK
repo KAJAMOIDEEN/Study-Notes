@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<string.h>
+main()
+{
+char s1[30],s2[30];
+clrscr();
+printf("Enter the string:");
+gets(s1);
+printf("Enter the another string:");
+gets(s2);
+
+	       strcat(s1,s2);
+if(strchr("Hello",'e'))
+printf(" e is in Hello\n");
+if(strstr("hai every body","hai"))
+printf("found hai\n");
+printf("The concatenated string is:%s\n",s1);
+getch();
+}

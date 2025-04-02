@@ -1,0 +1,164 @@
+Spring Boot:-
+
+1.Spring Features-
+-MVC --
+-Secured
+-standanlone 
+
+2.Setup Spring app-
+-spring initializer 
+-CLI
+-STS
+-understand layered architecture
+
+3.Maven or Gradle tools-
+
+4.understand spring annotations-
+@Entity: This annotation defines that a class can be mapped to a table
+@Id: This annotation specifies the primary key of the entity.
+@GeneratedValue: This annotation is used to specify the primary key generation strategy to use. 
+i.e. Instructs database to generate a value for this field automatically. If the strategy is not specified by default AUTO will be used.
+@OneToOne
+@OneToMany 
+@ManyToOne 
+@ManyToMany
+@Primary
+@Qualifier 
+
+5.Dependencies Injection(DI)
+ *Field Injection - DI is set into field of class -Spring uses reflection, it iterates over fields and resolve dependencies
+  prons:- simple and easy to use
+  cons:- cannot be used with immutable fields(i.e -final and )- chances of null pointer exception
+
+ *Setter Injection - DI is set using setter of field - we have to annotate the method using @Autowired
+  prons:-can change anytime after object creation -easy for junit testing we can pass mock objects easily
+  cons:- fields cannot be marked as final -difficult to read and maintain as per standards
+
+ *Constructor Injection - DI will be resolved at the time of initialization of object -it is recommended
+  When 1 constructor is present, @Autowired is not mandatory
+  prons:- Avoid NPE - we can create immutable object using constructor injection - fail fast - fail at compilation only in case of missing Dependencies
+
+  Fail case in DI - circular DI -  @Lazy and unsatisfied DI - @Qualifier("bean")
+  Circular dependency injection occurs when two or more beans depend on each other, creating a closed loop or cycle in the dependency chain. This situation       can lead to unexpected behavior, including:
+Bean creation failures
+Bean resolution failures
+Infinite loop
+
+
+
+6.Configuring springboot-
+ *Application Properties
+ *Profile Specific Config(test, prod)
+ @Profile 
+ spring.profiles.active= env
+
+7.spring bean lifecycle-
+  Bean:- Java Object -managed by IOC Container
+  IOC:- Contains all beans and manage them
+
+  to create bean:-
+  @Component - If we use parameterized constructor will not allow to create bean using component so need to use Bean annotation
+  @Bean -  @Configuration to create a bean
+
+  How spring find bean:- @ComponentScan 
+  default scope of bean is singleton and it is initialized at the time of app start
+  eager - bean with singleton scope
+  lazy - bean with prototype
+
+8.spring bean scope- @Scope("singleton") - default scope
+*singleton - beans with singleton scope is Eager Initialization - same bean will be created every time will try to call 
+*prototype - beans with prototype is lazy initialization - each time new object created - created when needed
+*request - beans with request is lazy initialization- one bean created for each request - proxyMode injecting request scoped bean in singleton
+*session - new object for each http session - lazy initialized  - when user accesss any api, session is created -remains active till session is expired
+Singleton: Single instance for the entire application context.
+Prototype: New instance for each request.
+Request: New instance for each HTTP request.
+Session: New instance for each HTTP session.
+
+
+9.spring boot data access-
+-Spring data JPA: Java Persistence API 
+*CrudRepository 
+*PagingAndSortingRepository
+*JPARepository
+-Spring JDBC
+
+10.Restful API using springboot-
+
+11.Spring boot Security-
+-authorization
+Authorization is the process of determining what an authenticated user is allowed to do within a system. It defines permissions or access rights to various resources based on roles or privileges assigned to a user.
+Purpose: The main goal of authorization is to enforce access controls and ensure that authenticated users can only perform actions or access resources that they are allowed to.
+
+-authentication 
+Authentication is the process of verifying who a user is. It ensures that the user presents valid credentials (such as a username and password) to gain access to the system.
+Purpose: The main goal of authentication is to confirm the identity of users before they can access the application's resources.
+
+
+
+12.Spring boot logging-
+ *Logback & Log4j 
+ *enable logging using slf4j annotation
+ fatal - High
+ error - High
+ warn  - Medium
+ Info  - Normal
+ Debug - Normal - not enabled by default 
+ Trace - Normal - not enabled by default 
+
+
+13.Spring boot Exception Handling-
+
+14.Spring boot caching-
+
+15.Spring boot interceptor-
+
+16.Spring boot scheduling-
+
+17.Spring boot unit testing-
+-Junit
+-Mockito
+
+18.Spring boot actuators-
+-Health Indicators - actuator/health - info about app health
+-Info              - actuator/info - custom information about app
+-loggers           - actuator/loggers - to view and modify the logging config of app
+-Metrics           - actuator/env - return list of all environment properties of running spring app
+-Beans             - actuator/beans - to get list of all the spring beans 
+
+Properties file config - management.endpoints.web.exposure.include=*
+
+
+19.Deploying spring boot application-
+-Tomcat
+-Docker
+-Using CI/CD pipeline - Jenkins
+-Cloud
+
+20.Microservices with spring boot-
+
+
+21.Build Project-
+
+
+
+
+
+
+
+ 
+
+
+
+Sping -Core:
+-POJO(Plain old java object) -- Getter & setters class, private 
+
+Java + Maven = Project Management
+Java + Jenkins = Continuous Integration
+Java + Apache Kafka = Stream Processing
+Java + Apache Hadoop = Big Data Processing
+Java + Microservices = Scalable Services
+Java + Spring = Enterprise Applications
+
+
+

@@ -1,0 +1,9 @@
+n=int(input())
+def r(n):
+    return(int(str(n) [::-1]))
+def adam(n):
+    if r(n)**2==r(n**2):
+        return('Adam number')
+    else:
+        return('Not an Adam number')
+print(adam(n))

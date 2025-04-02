@@ -1,0 +1,228 @@
+mylist = [30,21,33,42,53,64,71,86,97,10]
+for i in mylist:
+    print(i)
+Output
+30
+21
+33
+42
+53
+64
+71
+86
+97
+10
+
+Suppose you need to select every 3rd value of list.
+for i in mylist[::3]:
+    print(i)
+Output
+30
+42
+71
+10
+mylist[::3] is equivalent to mylist[0::3] which follows this syntax style list[start:stop:step]
+
+
+Python Loop Explained with Examples
+
+
+Example 1 : Create a new list with only items from list that is between 0 and 10
+l1 = [100, 1, 10, 2, 3, 5, 8, 13, 21, 34, 55, 98]
+
+new = [] #Blank list
+for i in l1:
+    if i > 0 and i <= 10:
+        new.append(i)
+
+new
+Output: [1, 10, 2, 3, 5, 8]
+It can also be done via numpy package by creating list as numpy array. See the code below.
+import numpy as np
+k=np.array(l1)
+new=k[np.where(k<=10)]
+
+Example 2 : Check which alphabet (a-z) is mentioned in string
+
+Suppose you have a string named k and you want to check which alphabet exists in the string k.
+k = "deepanshu"
+
+import string
+for n in string.ascii_lowercase:
+    if n in k:
+        print(n + ' exists in ' + k)
+    else:
+        print(n + ' does not exist in ' + k)
+string.ascii_lowercase returns 'abcdefghijklmnopqrstuvwxyz'.
+
+Practical Examples : for in loop in Python
+
+Create sample pandas data frame for illustrative purpose.
+import pandas as pd
+np.random.seed(234)
+df = pd.DataFrame({"x1" : np.random.randint(low=1, high=100, size=10),
+                     "Month1" : np.random.normal(size=10),
+                     "Month2" : np.random.normal(size=10),
+                     "Month3" : np.random.normal(size=10),
+                     "price"  : range(10)
+                     })
+
+df
+1. Multiple each month column by 1.2
+for i in range(1,4):
+    print(df["Month"+str(i)]*1.2)
+range(1,4) returns 1, 2 and 3. str( ) function is used to covert to string. "Month" + str(1) means Month1.
+2. Store computed columns in new data frame
+import pandas as pd
+newDF = pd.DataFrame()
+for i in range(1,4):
+    data = pd.DataFrame(df["Month"+str(i)]*1.2)
+    newDF=pd.concat([newDF,data], axis=1)
+pd.DataFrame( ) is used to create blank data frame. The concat() function from pandas package is used to concatenate two data frames.
+
+3. Check if value of x1 >= 50, multiply each month cost by price. Otherwise same as month.
+import pandas as pd
+import numpy as np
+for i in range(1,4):
+    df['newcol'+str(i)] = np.where(df['x1'] >= 50,
+                                   df['Month'+str(i)] * df['price'],
+                                   df['Month'+str(i)])
+In this example, we are adding new columns named newcol1, newcol2 and newcol3. np.where(condition, value_if condition meets, value_if condition does not meet) is used to construct IF ELSE statement.
+
+4. Filter data frame by each unique value of a column and store it in a separate data frame
+mydata = pd.DataFrame({"X1" : ["A","A","B","B","C"]})
+
+for name in mydata.X1.unique():
+    temp = pd.DataFrame(mydata[mydata.X1 == name])
+    exec('{} = temp'.format(name))
+The unique( ) function is used to calculate distinct values of a variable. The exec( ) function is used for dynamic execution of Python program. See the usage of string format( ) function below -
+s= "Your Input"
+"i am {}".format(s)
+
+Output: 'i am Your Input'
+
+Loop Control Statements
+
+Loop control statements change execution from its normal iteration. When execution leaves a scope, all automatic objects that were created in that scope are destroyed.
+
+Python supports the following control statements.
+Continue statement
+Break statement
+
+Continue Statement
+When continue statement is executed, it skips the further code in the loop and continue iteration.
+In the code below, we are avoiding letters a and d to be printed.
+for n in "abcdef":
+    if n =="a" or n =="d":
+       continue
+    print("letter :", n)
+letter : b
+letter : c
+letter : e
+letter : f
+Break Statement
+When break statement runs, it breaks or stops the loop.
+In this program, when n is either c or d, loop stops executing.
+for n in "abcdef":
+    if n =="c" or n =="d":
+       break
+    print("letter :", n)
+letter : a
+letter : b
+
+for loop with else clause
+
+Using else clause with for loop is not common among python developers community.
+The else clause executes after the loop completes. It means that the loop did not encounter a break statement.
+The program below calculates factors for numbers between 2 to 10. Else clause returns numbers which have no factors and are therefore prime numbers:
+
+for k in range(2, 10):
+    for y in range(2, k):
+        if k % y == 0:
+            print( k, '=', y, '*', round(k/y))
+            break
+    else:
+        print(k, 'is a prime number')
+2 is a prime number
+3 is a prime number
+4 = 2 * 2
+5 is a prime number
+6 = 2 * 3
+7 is a prime number
+8 = 2 * 4
+9 = 3 * 3
+
+While Loop
+
+While loop is used to execute code repeatedly until a condition is met. And when the condition becomes false, the line immediately after the loop in program is executed.
+i = 1
+while i < 10:
+    print(i)
+    i += 2 #means i = i + 2
+    print("new i :", i)
+Output:
+1
+new i : 3
+3
+new i : 5
+5
+new i : 7
+7
+new i : 9
+9
+new i : 11
+
+While Loop with If-Else Statement
+
+If-Else statement can be used along with While loop. See the program below -
+
+counter = 1 
+while (counter <= 5): 
+    if counter < 2:
+        print("Less than 2")
+    elif counter > 4:
+        print("Greater than 4")
+    else: 
+        print(">= 2 and <=4")    
+    counter += 1
+
+Learn Python : Top 50 Python Tutorials
+ Spread the Word!
+Share Share Tweet Subscribe
+Related Posts
+Run SAS in Python without Installation
+Wish Christmas with Python and R
+How to use variable in a query in pandas
+Pollution in India : Real-time AQI Data
+Pointwise mutual information (PMI) in NLP
+Only size-1 arrays can be converted to Python scalars
+About Author:
+
+Deepanshu founded ListenData with a simple objective - Make analytics easy to understand and follow. He has over 10 years of experience in data science. During his tenure, he has worked with global clients in various domains like Banking, Insurance, Private Equity, Telecom and Human Resource.
+
+While I love having friends who agree, I only learn from those who don't
+ Let's Get Connected  Email  LinkedIn
+3 Responses to "Loops in Python explained with examples"
+
+karishma2 May 2019 at 22:03
+hi can i get PDF file for Python and R..its very difficult to read in metro.
+If yes i will be so grateful if u can mail me the same
+
+ReplyDelete
+
+Alisha1 June 2019 at 01:42
+Thank you for the information! And one more great article I've just found here https://www.listendata.com/2018/05/named-entity-recognition-using-python.html
+
+ReplyDelete
+
+Unknown22 October 2019 at 00:19
+thank you, this is a great piece of information.
+
+ReplyDelete
+
+NEXT →← PREV
+Get Free Email Updates
+Follow us on Facebook
+ADVERTISEMENT
+
+All rights reserved © 2022 RSGB Business Consultant Pvt. Ltd.

@@ -1,0 +1,52 @@
+/*
+Command-Line Arguments
+========================
+	Passing the arguments to main().
+
+ argc (Argument Count) = Number of elements (arguments)
+ argv (Argument Value) = To store the arguments
+
+ Method 1:
+ ==========
+
+ 1. Compile the program.
+ 2. We have to give the arguments for main().
+ 3. From Options Menu (Alt + O), select Arguments.
+ 4. Within the Argument tab we have to type the arguments for main()
+     and the press Enter Key.
+ 5. Press Esc Key to come out from the Options Menu.
+ 6. Then run the program.
+ 7. We get the output. In the Output,
+
+	First Argument must be the name of the file is displayed.
+	From the next itself the arguments given by the user is displayed.
+
+  Method 2:
+  ========
+  1. Compile the program.
+  2. Come out from the editor. (Quit).
+  3. Type the file name and then arguments for main().
+
+
+  example:
+  ========
+
+  d:\turbo\3450> cmdarg 10 20 one two
+	      */
+/*COMMAND LINE ARGUMENTS:
+       Arguments passing only in main Function.  */
+#include<stdio.h>
+#include<conio.h>
+
+main(int c, char *v[])
+{
+   int i;
+   clrscr();
+
+   printf("There are %d number of arguments \n" ,c);
+
+   for(i=0;i<c;i++)
+      printf("Argument  %d : %s\n",i,v[i]);
+
+     getch();
+}

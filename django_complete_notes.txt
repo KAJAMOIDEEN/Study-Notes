@@ -1,0 +1,62 @@
+Key Features of Django:
+
+Model Template View (MTV) Structure
+* ORM Object Relational Mapper 
+* Models
+* URLs and Views
+* Templates
+
+https://docs.djangoproject.com/en/5.0/ref/templates/builtins/
+
+
+Django comments:
+
+$pip install pipenv :- to install virtual environment
+
+$pipenv shell :- to activate virtual environment
+
+exit :- to exit virtual environment
+
+$pipenv --venv  :- to check the virtual environment
+
+$pip install django :- to install django 
+
+$django-admin :- to display all the django subcomments
+
+$django-admin startproject _project_name_ :-  to start the new django project
+
+$python manage.py startapp _app_name_ :- to create app 
+
+$python manage.py runserver :- to run the project
+
+$python manage.py runserver 8004:- to change the project port number
+
+
+
+Djnago Template Comments:
+
+$python -m venv .venv :- to create virtual environment
+
+$.venv\Scripts\activate :- to activate virtual environment
+
+$python -m pip install --upgrade pip :- to upgrade pip
+
+
+Django mysql comment:
+$pip install mysqlclient :- to connect mysql with virtual environment
+$pip install pymysql
+
+$python manage.py makemigrations :- to create migrations
+
+$python manage.py migrate :- to execute migrate 
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'db_name',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        'USER':'root',
+        'PASSWORD':'root',
+    }
+}

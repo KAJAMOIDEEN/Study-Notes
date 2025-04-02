@@ -1,0 +1,58 @@
+Java Collections:
+To store the data and manipulating the data.
+Collectuons supports all the below 4 interface
+
+List - *ArrayList-stores like array,
+*LinkedList- doubly linked list
+
+(Allows Duplicate, store the date in ordered)
+ArrayList Methods:
+add() - to add the data
+get() - to get the data in index
+set() - to change/update the data
+remove() - to delete the selected data
+clear()- to clear the data in the list
+size() - to find the length 
+
+LinkedList Methods:
+* all the methods used in arraylist will be accessible
+addFirst()	-Adds an item to the beginning of the list	
+addLast()	 -Add an item to the end of the list	
+removeFirst() - Remove an item from the beginning of the list	
+removeLast() - Remove an item from the end of the list	
+getFirst() - Get the item at the beginning of the list	
+getLast() - Get the item at the end of the list
+
+Map - 
+*HashMap - one null key and many null values 
+*LinkedHashMap - no null key and many null values 
+*TreeMap - one null key and many null values 
+(Dupliates Not Allowed, store the data in Key&Values)
+Methods:
+put() - to add the data
+get() - to get the data by key 
+remove() - to delete the selected data by key
+clear()- to clear the data in the list
+size() - to find the length 
+keySet() - to get the keys in the map
+values() - to get the value only in the map
+
+Set - HashSet, TreeSet
+(Duplicate not duplicate, can sort the set easily)
+Methods:
+add() - to add the data
+get() - to get the data in index
+set() - to change/update the data
+remove() - to delete the selected data
+clear()- to clear the data in the list
+size() - to find the length 
+
+Queue - Deque
+(allows duplicates, FIFO order)
+Methods:
+add(element): Adds an element to the rear of the queue. If the queue is full, it throws an exception.
+offer(element): Adds an element to the rear of the queue. If the queue is full, it returns false.
+remove(): Removes and returns the element at the front of the queue. If the queue is empty, it throws an exception.
+poll(): Removes and returns the element at the front of the queue. If the queue is empty, it returns null.
+element(): Returns the element at the front of the queue without removing it. If the queue is empty, it throws an exception.
+peek(): Returns the element at the front of the queue without removing it. If the queue is empty, it returns null.

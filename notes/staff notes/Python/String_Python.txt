@@ -1,0 +1,111 @@
+String:
+	Collection of characters enclosed single (or) double quotes/.
+Syntax:
+	variablename='initial' (or) "initial"
+
+Example:
+------------
+	str="Hello"
+	print(str[0])
+	print(str[2:4])
+String Replication Operator:
+-------------------------------------
+	A string or a group of strings may be repeated by using the exponential operator(*).
+Syntax:
+----------
+	("stringvariable",*n)
+	print("Welcome",*3)
+
+Format Method:
+----------------------
+	The format() method is an extremely convenient way to format text.
+<	- left - aligned within the available space
+>	- right - aligned within the available space
+^	- centered within the available space
++	- Positive
+-	- Negative numbers
+Syntax:
+	format(value,format_specifier)
+	
+Example:
+	print(format('python','<20'))
+	print(format('python','>60'))
+	print(format('python','^50'))
+	print(format(+400))
+	print(format(-400))
+
+String Methods:
+---------------------
+	1. len		- No. of characters in a string
+	2. capitalize	- The first character in uppercase and the remaining 			characters in lowercase format
+	3. upper		- All the characters in upper
+	4. lower		- All the characters in lower
+	5. count		-  
+	6. index		- lowest index in the given string will be returned by this 				method
+	7. endwith		- Return Boolean value true, if all the strings end with the suffix specified and this method will return a false if not
+	8. find		- 
+	9. isalnum		- Return True one character at least and if all the characters in the given string
+	10. isalpha
+	11. isdigit
+	12. title		- Title case version of the given string, where the first letter of a word is in uppercase and the rest of the characters in the lower case
+	13. islower
+	14. isspace		- Return true if the given string contains only whitespace characters
+	15.istitle
+	16. isupper
+	17. split
+
+Example:
+---------------
+	str1="welcome"
+	print(len(str1))
+	print(str.capitalize())
+	print(str.upper())
+	print(str.lower())
+	str2="string string"
+	print(str2.count("string"))
+	print(str2.index("string",2))8
+	print(str2.endswith("string"))
+	print(str2.find("string"))
+	print(str2.isalnum())
+	print(str1.isalpha())
+	print(str1.isdigit())
+	print(str1.title())
+	print(str2.islower())
+	str3=" "
+	print(str3.isspace())
+	print(str2.istitle())
+	print(str1.isupper())
+	print(str1.spilt(' '))
+
+String Modules:
+---------------------
+import string
+string.brackets="[]{}()<>"
+print(string.brackets)
+print(string.digits)
+print(string.hexdigits)
+print(string.octdigits)
+print(string.punctuation)
+print(string.whitespace)
+
+
+import string
+print(string.ascii_letters)
+print(string.ascii_lowercase)
+print(string.ascii_uppercase)
+print(string.printable)
+
+
+
+import string
+text="welcome"
+print(text.upper())
+print(text.lower())
+print(text.split())
+print(text.replace("welcome","apollo"))
+print(text.find("welcome"),text.find("wel"))
+print(text.count("e"))
+print(text.swapcase())
+print(text.capitalize())
+print(text.title())
+

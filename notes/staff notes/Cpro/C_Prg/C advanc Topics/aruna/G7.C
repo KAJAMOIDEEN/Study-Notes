@@ -1,0 +1,52 @@
+/*concentric circles with colors*/
+#include<stdio.h>
+#include<graphics.h>
+main()
+{
+int driver,mode;
+int i,j,k,l,m,n;
+driver=9;
+mode=VGAMED;
+initgraph(&driver,&mode,"\\tc");
+getch();
+setpalette(0,5);
+getch();
+setcolor(RED);
+for(i=100;i>=0;i--)
+{
+  circle(300,200,i);
+  getch();
+}
+setcolor(YELLOW);
+for(j=80;j>0;j--)
+{
+circle(300,200,j);
+getch();
+}
+setcolor(GREEN);
+for(k=60;k>=0;k--)
+{
+circle(300,200,k);
+getch();
+}
+setcolor(MAGENTA);
+for(i=40;i>=0;i--)
+{
+circle(300,200,i);
+getch();
+}
+setcolor(WHITE);
+for(m=20;m>=0;m--)
+{
+circle(300,200,m);
+getch();
+}
+setcolor(BROWN);
+for(n=10;n>=0;n--)
+{
+circle(300,200,n);
+getch();
+}
+restorecrtmode();
+return;
+}

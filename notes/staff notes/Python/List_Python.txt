@@ -1,0 +1,253 @@
+Python Collections (Arrays)
+------------------------------------
+There are four collection data types in the Python programming language:
+
+List 	-	is a collection which is ordered and changeable. Allows duplicate 		members.
+Tuple 	-	is a collection which is ordered and unchangeable. Allows duplicate 		members.
+Set 	-	is a collection which is unordered and unindexed. No duplicate 		members.
+Dictionary -	is a collection which is unordered, changeable and indexed. No duplicate 		members.
+List:
+------
+	* We can access elements  of a list with square brackets[] & a index value.
+	* Index value for lists begins with the value 0 in Python
+Syntax:
+---------
+	listname=[values]
+	x=[1,3,56,6,7]
+
+Method	Description
+----------	----------------
+append()	Adds an element at the end of the list
+clear()	Removes all the elements from the list
+copy()	Returns a copy of the list
+count()	Returns the number of elements with the specified value
+extend()	Add the elements of a list (or any iterable), to the end of the current list
+index()	Returns the index of the first element with the specified value
+insert()	Adds an element at the specified position
+pop()	Removes the element at the specified position
+remove()	Removes the item with the specified value
+reverse()	Reverses the order of the list
+sort()	Sorts the list
+max()	Maximum value
+min()	Minimum value
+list()	Converts the given sequence as a list
+
+List:
+------
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
+print(thislist[1])
+thislist[1] = "blackcurrant"
+print(thislist)
+
+for x in thislist:
+  print(x)
+
+print(len(thislist))
+
+thislist.append("orange")
+print(thislist)
+
+thislist.insert(1, "orange")
+print(thislist)
+
+
+thislist.remove("orange")
+print(thislist)
+
+
+thislist = ["apple", "banana", "cherry"]
+if "apple" in thislist:
+  print("Yes, 'apple' is in the fruits list")
+
+thislist = ["apple", "banana", "cherry"]
+thislist.pop()
+print(thislist)
+
+
+thislist = ["apple", "banana", "cherry"]
+del thislist[0]
+print(thislist)
+
+thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
+print(thislist)
+
+
+Tuple:
+--------
+	* To access tuple elements you can use parenthesis()
+	
+Syntax:
+---------
+	tuplename=(values)
+	x=('a','b','c')
+	
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
+print(thistuple[1])
+
+thistuple = ("apple", "banana", "cherry")
+thistuple[3] = "orange" # This will raise an error
+print(thistuple)
+
+thistuple = ("apple", "banana", "cherry")
+del thistuple
+print(thistuple) #this will raise an error because the tuple no longer exists
+
+
+thistuple = tuple(("apple", "banana", "cherry")) # note the double round-brackets
+print(thistuple)
+
+
+Dictionary:
+--------------
+	* Python has a hash table data structure which stores data as key value pair 	enclosed in {} and is known as dictionary.
+Syntax:
+----------
+	dictionaryname={key1:value1,key2:value2,.......}
+	y={"name":"AAA","rollno":110}
+
+Example:
+-----------
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)
+
+x = thisdict.get("model")   //Get   -- To fetch a specific value for the associated key
+print(x)
+
+Modify:
+----------
+thisdict["year"] = 2018
+print(thisdict)
+
+
+for x in thisdict:
+  print(x)
+for x in thisdict:
+  print(thisdict[x])
+
+
+for x, y in thisdict.items():  //Items   -- To get a dicitionary key,value pairs 
+  print(x, y)
+
+
+Adding Items:
+-----------------
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict["color"] = "red"
+
+
+The pop() method removes the item with the specified key name:
+------------------------------------------------------------------------------------
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+ thisdict.pop("model")
+print(thisdict)
+print(thisdict)
+
+
+The del keyword removes the item with the specified key name:
+----------------------------------------------------------------------------------
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+del thisdict["model"]
+print(thisdict)
+
+
+The clear() keyword empties the dictionary:
+-------------------------------------------------------
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.clear()
+print(thisdict)
+
+
+Set:
+----
+	* A set is a collection which is unordered and unindexed. 
+	* In Python sets are written with curly brackets.
+
+thisset = {"apple", "banana", "cherry"}
+print(thisset)
+
+
+thisset = {"apple", "banana", "cherry"}
+
+for x in thisset:
+  print(x)
+
+
+To add one item to a set use the add() method.
+---------------------------------------------------------
+thisset = {"apple", "banana", "cherry"}
+
+thisset.add("orange")
+
+print(thisset)
+
+
+Add multiple items to a set, using the update() method:
+-------------------------------------------------------------------
+
+thisset = {"apple", "banana", "cherry"}
+
+thisset.update(["orange", "mango", "grapes"])
+
+print(thisset)
+
+
+thisset = {"apple", "banana", "cherry"}
+
+print(len(thisset))
+thisset.remove("banana")
+
+print(thisset)
+thisset.discard("apple")
+
+print(thisset)
+
+
+Remove the last item by using the pop() method:
+-------------------------------------------------------------
+thisset = {"apple", "banana", "cherry"}
+
+x = thisset.pop()
+
+print(x)
+
+print(thisset)
+
+The clear() method empties the set:
+---------------------------------------------
+thisset = {"apple", "banana", "cherry"}
+
+thisset.clear()
+
+print(thisset)
+
+
+The del keyword will delete the set completely
+-----------------------------------------------------------
+thisset = {"apple", "banana", "cherry"}
+
+del thisset
+
+print(thisset)
+

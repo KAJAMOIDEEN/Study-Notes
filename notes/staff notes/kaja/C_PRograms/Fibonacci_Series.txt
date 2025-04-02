@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a=0,b=1,c,n,i;
+clrscr();
+printf("\t Enter the limit: \t\t");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+printf("\n\n\t%d\n",a);
+c=a+b;
+a=b;
+b=c;
+}
+getch();
+}

@@ -1,0 +1,19 @@
+Swing Packages
+	*javax.swing
+	*javax.swing.border
+	*javax.swing.colorchooser
+	*javax.swing.event
+	*javax.swing.filechooser
+	*javax.swing.plaf
+	*javax.swing.plaf.basic
+	*javax.swing.plaf.metal
+	*javax.swing.plaf.multi
+	*javax.swing.table
+	*javax.swing.text
+	*javax.swing.text.html
+	*javax.swing.tree
+	*javax.swing.undo
+
+	Additional two packages to store the look & feel classes of the Motif and Windows OS. These packages are included with JDK 1.2
+	*com.sun.java.swing.plaf.motif.*;
+	*com.sun.java.swing.plaf.windows.*;

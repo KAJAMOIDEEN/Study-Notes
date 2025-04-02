@@ -1,0 +1,55 @@
+		2.  DATA INPUT/OUTPUT FUNCTIONS  & C OPERATORS
+		  ~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~
+  I/O FUNCTIONS:
+  ~~~~~~~~~~~~~~~
+     Two types of i/o functions.
+
+     * getchar(),putchar()      /*printf--->putchar()*/
+     * gets(),puts()            /*scanf---->getchar()*/
+
+SCANF:
+
+scanf("format specifier",&v1,&vn);
+
+PRINTF:
+
+printf("format specifier",v1);
+
+GETCHAR():
+**********
+
+    To get the character only.
+
+PUTCHAR():
+**********
+    To Print the Character only.
+
+Gets()--->To get the String(set of character).
+
+puts()--->to print the String.
+
+syntax for getchar():
+*********************
+variable name=getchar();
+
+Eg:
+      a=getchar();
+
+putchar():
+*********
+
+putchar(variable  name);
+
+eg:
+    putchar(a);
+
+syntax for gets & puts()
+************************
+gets(var name);  eg:gets(z)
+puts(var name);  eg:puts(z)
+
+formate specifier:
+******************
+ int-%d, longint-%ld,float-%f
+ char-%c(or)string-%s
+

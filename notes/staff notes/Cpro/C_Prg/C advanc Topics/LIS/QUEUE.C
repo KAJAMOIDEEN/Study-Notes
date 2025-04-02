@@ -1,0 +1,61 @@
+
+/*QUEUE
+  ~~~~~*/
+
+#include<stdio.h>
+#include<conio.h>
+void add();
+void del();
+void disp();
+int q[100];
+int i,r=0,f=0;
+main()
+{
+ int ch;
+ clrscr();
+ printf("\n 1.add");
+ printf("\n 2.del");
+ printf("\n 3.disp");
+ do
+ {
+ printf("\n Enter ur choice");
+ scanf("%d",&ch);
+ switch(ch)
+ {
+ case 1:add();break;
+ case 2:del();break;
+ case 3:disp();break;
+ default:printf("\n Invalid choice");break;
+ }
+ }
+ while((ch>0)&&(ch<4));
+ getch();
+ }
+ void add()
+ {
+ printf("\n Enter the element to add in to the quee");
+ scanf(" %d",&q[r++]);
+ }
+ void disp()
+ {
+ if(r==f)
+ printf("\n quee is empty");
+ else
+ {
+ printf("\n The quee contains");
+ for(i=f;i<r;i++)
+ printf("\n%d",q[i]);
+ }
+ }
+ void del()
+ {
+ if(r==f)
+ printf("\n quee is empty");
+ else
+ {
+ printf("\n The element is deleted %d",q[f]);
+ f++;
+ }
+ }
+
+

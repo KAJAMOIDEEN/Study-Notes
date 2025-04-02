@@ -1,0 +1,50 @@
+Operators:
+Python divides the operators in the following groups:
+
+Arithmetic operators:
+	+,-,*,/,%,
+	**	Exponentiation	
+	//	Floor division
+Assignment operators:
+	=	
+Comparison operators:
+	>,<,<=,>=,==,!= 
+Logical operators:
+	and,or,not
+Identity operators:
+	is	-Returns true if both variables are the same object
+	is not	-Returns true if both variables are not the same object
+Membership operators:
+in	- Returns True if a sequence with the specified value is present in the object
+not in	- Returns True if a sequence with the specified value is not present in the object
+
+Bitwise operators:
+	&,|,^,~,<<,>>
+
+
+Example:
+	x = 5
+	print(x > 3 and x < 10)
+	x = 5
+	print(not(x > 3 and x < 10))
+
+Identity Operators:
+------------------------
+  , x = ["apple", "banana"]
+y = ["apple", "banana"]
+z = x
+print(x is z)
+
+x = ["apple", "banana"]
+y = ["apple", "banana"]
+z = x
+print(x is not z)
+
+Membership Operator:
+-----------------------------
+x = ["apple", "banana"]
+print("banana" in x)
+
+
+x = ["apple", "banana"]
+print("pineapple" not in x)

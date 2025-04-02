@@ -1,0 +1,19 @@
+f STRING FUNCTION:
+~~~~~~~~~~~~~~~~
+   Six type of string function.they are
+
+	Function	     Keywords
+     1.string concatenation   strcat
+     2.string comparision     strcmp
+     3.string copy            strcpy
+     4.string set             strset
+     5.string length          strlen
+     6.string revese          strrev
+     7.string to string       strstr
+     8.string to char         strchr
+     9.string lower           strlwr
+    10.string upper           strupr
+Header file:
+~~~~~~~~~~~~
+#include<string.h>
+

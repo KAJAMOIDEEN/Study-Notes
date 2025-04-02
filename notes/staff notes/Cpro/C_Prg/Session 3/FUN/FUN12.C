@@ -1,0 +1,29 @@
+ /*EXTERNAL VARIABLE
+  ~~~~~~~~~~~~~~~~~
+    External is a keyword of external variables.It is a global declaration.
+It will be accesed in outside of a function*/
+
+#include<stdio.h>
+#include<conio.h>
+
+extern int a=15,b=7;/*global variable*/
+sum();
+main()
+{
+ /*extern int a=10,b=20*/ /*local variable*/
+ clrscr();
+ printf("SUB=%d\n",a-b);
+ sum();
+ getch();
+}
+sum()
+{
+ int c,a1,b1;
+ a1=5;
+ b1=10;
+ c=a+b;
+ printf("ADD=%d\n",c);
+ c=a1+b1;
+ printf("SUM=%d\n",c);
+}
+

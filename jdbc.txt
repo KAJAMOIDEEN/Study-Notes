@@ -1,0 +1,11 @@
+JDBC:
+
+Java Database Connectivity.
+
+Used to commnuicate with db
+
+JDBC API Driver for communication
+
+Independent db and it is driver based 
+
+composed of numbers of classes and interface 

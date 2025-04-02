@@ -1,0 +1,47 @@
+def decimalToBinary(n):
+    return "{0:b}".format(int(n))
+   
+# Driver code
+if __name__ == '__main__':
+    print(decimalToBinary(8))
+    print(decimalToBinary(18))
+    print(decimalToBinary(7))
+Output
+1000
+10010
+111
+Quick Ninja Method: One Line Code to Convert Decimal to Binary with user input
+
+
+# Quick Ninja One line Code
+print(bin(4785)[2:])
+Output
+1001010110001
+or 
+
+
+# Use this for user input
+#decNum = int(input("Enter any Decimal Number: "))
+ 
+decNum = 4785
+print(bin(decNum)[2:])
+ 
+decNum1 = 10
+print(bin(decNum1)[2:])
+ 
+decNum2 = 345
+print(bin(decNum2)[2:])
+Output
+1001010110001
+1010
+101011001
+
+
+
+
+Like
+35
+Previous
+Binary to decimal and vice-versa in python
+Next
+Quickly convert Decimal to 

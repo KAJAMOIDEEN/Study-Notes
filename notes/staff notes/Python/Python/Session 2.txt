@@ -1,0 +1,97 @@
+
+Variable:
+	
+		Store the value in memory location
+Example:
+------------
+x = 1    # int       
+a=87L  #long
+y = 2.8  # float
+z = 1j   # complex
+
+Python Datatypes:
+-----------------------
+	1. Numeric	- int, float, complex, boolean
+	2. Sequence	- str, list,tuple
+	3. Sets		- set, frozen set
+	4. Mapping	- dict
+
+Type() Function:
+---------------------
+To verify the type of any object in Python, use the type() function:
+Example:
+-----------
+print(type(x))
+print(type(y))
+print(type(z))
+
+List of Literals in Python:
+--------------------------------
+1. Integer			- 10,11,-12,-13
+2. Floating Point		- 5.6,-3.8,0.22
+3. String			- "aa",'bb'
+4. Complex 		- 2+4j, 9-4j
+5. List			- [], [1,2,3,4]
+6. Tuple			- (), (1,2,3)
+7. Dictionary		- {}, {'a:',8}
+8. Set			-{1,2,3,4}
+9. Unicode		- u"xyz",u"'
+
+
+Example:
+-------------
+
+x=100
+y=98.2
+num='a'
+print("X Value:",x)
+print(y)
+print(num)
+print(type(y))
+print(type(num))
+
+
+
+Input Method:
+--------------------
+x=int(input("Enter X Value"))
+print(x)
+print(type(x))
+y=raw_input("Enter Ur Name")
+print(y)
+
+Python Constants:
+-----------------------
+1. True	- represent the true value of bool type
+2. False	- represent the false value of bool type
+3. None	- is used to represent the absence of value
+
+Formatting Functions:
+----------------------------
+	print("%format specifier",%variablename)
+%c	- character
+%s	- string
+%i	- signed decimal integer
+%d	- signed decimal integer
+%u	- unsigned decimal integer
+%o	- octal integer
+%f	- floating point
+
+
+Keyword:
+-------------
+import keyword
+print(keyword.kwlist)
+
+Math Functions:
+---------------------
+abs(x), ceil(x), floor(x),cmp(x,y),exp(x),sqrt(x),log(x),max(x,y,..),
+min(x,y,..), pow(x,y)
+
+
+
+Simple Programs:
+------------------------
+1. Temperature in Celcius and convert it to Fahernhit	 f=(c*1.8)+32
+2. Compute Simple Interest	s=pnr/100
+

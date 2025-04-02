@@ -1,0 +1,37 @@
+import java.util.*;
+class Main{
+    
+    public static int minArr(int[] arr){
+        int n = arr.length;
+        int min= arr[0];
+        for(int i=1;i<n;i++){
+            if(arr[i]<min){
+                min=arr[i];
+            }
+        }
+        return min;
+    }
+    public static int maxArr(int[] arr){
+        int n = arr.length;
+        int max= arr[0];
+        for(int i=1;i<n;i++){
+            if(arr[i]>max){
+                max=arr[i];
+            }
+        }
+        return max;
+    }
+    public static void main(String args[]){
+        int[] arr= new int[5];
+       // Main obj = new Main();
+        System.out.println("Enter 5 digits for reverse:");
+        Scanner sc= new Scanner(System.in);
+        for(int i=0;i<5;i++){
+        arr[i]= sc.nextInt();
+        }
+        int res=minArr(arr);
+       System.out.println("Minimum Num:"+res);
+        int res1=maxArr(arr);
+        System.out.println("Maximum Num:"+res1);
+    }
+}

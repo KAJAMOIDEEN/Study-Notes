@@ -1,0 +1,50 @@
+ /*ARRAY:
+  ~~~~~~
+  --> An array is a collection of related data item of same data type
+      that share a common name.
+  --> Each element is identified by its index (or)postion.
+  --> Normally array index start from 0.                                                                                                           
+
+Types Of Arrays:
+~~~~~~~~~~~~~~~~
+       1.ONE DIMENSIONAL ARRAY EX[10]
+       2.TWO DIMENSIONAL ARRAY EX[10][20]
+		   |
+		   |
+		   |
+       3.MULTI DIMENSIONAL ARRAY EX:[10][20][30]...
+
+SYNTAX:
+~~~~~~~
+       DataType arrayname[size];
+Ex:
+~~
+  int a[10];
+  float a [20];
+  Char name[25];
+*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+ int sno;
+ char name[20];
+ int mark[5],total;
+ clrscr();
+  printf("\n\t\t\t\ STUDENT MARK LIST ");
+ printf("\n\t\t\t\ ******* **** **** ");
+ printf("\n ENTER THE  ROLL NO:");
+ scanf("%d",&sno);
+ printf("\n ENTER THE STUD NAME:");
+ scanf("%s",&name);
+ printf("\n ENTER 5 SUBJECT MARKS:\n");
+ scanf("%d%d%d%d%d",&mark[0],&mark[1],&mark[2],&mark[3],&mark[4]);
+ total=mark[0]+mark[1]+mark[2]+mark[3]+mark[4];
+ printf("The total mark is=%d\n",total);
+ getch();
+ }
+
+
+
+
+

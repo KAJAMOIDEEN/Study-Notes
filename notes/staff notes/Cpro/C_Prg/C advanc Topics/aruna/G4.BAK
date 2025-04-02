@@ -1,0 +1,14 @@
+
+
+#include<conio.h>
+#include<graphics.h>
+main()
+{
+ int driver,mode;
+ driver=9;
+ mode=VGAMED;
+ initgraph(&driver,&mode,"\\Tc");
+bar(100,150,250,300);
+ getch();
+ restorecrtmode();
+}

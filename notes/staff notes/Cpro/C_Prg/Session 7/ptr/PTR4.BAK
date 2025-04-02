@@ -1,0 +1,18 @@
+/*ARRAY OF POINTER  VARIABLE TO CREATE IN ARRAY
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+ float a[5],*p[5],i;
+ clrscr();
+ for(i=0;i<5;i++)
+ {
+  scanf("%f",&a[i]);
+  p[i]=&a[i];
+ }
+ for(i=0;i<5;i++)
+ printf("Value=%f\taddress=%u\n",*p[i],p[i]);
+ getch();
+}
